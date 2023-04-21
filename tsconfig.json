@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "outDir": "build",
+    "esModuleInterop": true
+  },
+  "paths":{
+    "@config/*": ["src/config/*"],
+    "@modules/*":["src/modules/*"],
+    "@shared/*": ["src/shared/*"]
+  },
+  "include": [
+    "**/*"
+  ],
+  "exclude": [
+    "build"
+  ]
+}
+
