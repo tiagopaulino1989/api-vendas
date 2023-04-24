@@ -1,20 +1,51 @@
+// {
+//   "compilerOptions": {
+//     "target": "es6",
+//     "module": "commonjs",
+//     "outDir": "build",
+//     "esModuleInterop": true
+//   },
+//   "paths": {
+//     "@config/*": ["src/config/*"],
+//     "@modules/*": ["src/modules/*"],
+//     "@shared/*": ["src/shared/*"]
+//   },
+//   "include": [
+//     "src/**/*.ts"
+//   ],
+//   "exclude": [
+//     "build",
+//     "node_modules"
+//   ]
+// }
 {
-  "compilerOptions": {
-    "target": "es6",
-    "module": "commonjs",
-    "outDir": "build",
-    "esModuleInterop": true
-  },
-  "paths":{
+	"compilerOptions": {
+		"resolveJsonModule": true,
+		"target": "ES6",
+		"module": "commonjs",
+		"declaration": true,
+		"declarationMap": true,
+		"outDir": "./dist",
+		"rootDir": "./src",
+		"strict": false,
+		"strictPropertyInitialization": false,
+		"baseUrl": "./",
+  "paths": {
     "@config/*": ["src/config/*"],
-    "@modules/*":["src/modules/*"],
+    "@modules/*": ["src/modules/*"],
     "@shared/*": ["src/shared/*"]
   },
-  "include": [
-    "**/*"
+		"esModuleInterop": true,
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true
+	},
+    "include": [
+    "src/**/*.ts"
   ],
   "exclude": [
-    "build"
+    "build",
+    "node_modules"
   ]
 }
-
